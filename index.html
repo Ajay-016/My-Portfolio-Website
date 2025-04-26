@@ -24,7 +24,7 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Web Developer</p>
+                <span id="element"></span>
                 <h1>Hi , I'm <span>Ajay</span><br> From India</h1>
             </div>
         </div>
@@ -213,5 +213,17 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+
+
+
+<!-- ---------------------------------------------------Animation for text "web Developer"------------------------------------- -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Devops Engineer'],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 </html>
