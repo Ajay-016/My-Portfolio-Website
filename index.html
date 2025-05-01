@@ -218,13 +218,31 @@
 
 
 <!-- ---------------------------------------------------Animation for text "web Developer"------------------------------------- -->
+<!-- Load Typed.js from CDN -->
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Devops Engineer'],
-      typeSpeed: 50,
+
+<!-- Target element where text will appear -->
+<h2 id="element" style="font-family: 'Poppins', sans-serif; color: #00ADB5; font-size: 2rem;"></h2>
+
+<!-- Initialize Typed.js -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Typed('#element', {
+        strings: [
+          'Web Developer 💻',
+          'Problem Solver 🧠',
+          'Code. Build. Ship. 🚀'
+        ],
+      typeSpeed: 60,
+      backSpeed: 40,
+      backDelay: 1500,
+      loop: true,
+      showCursor: true,
+      cursorChar: '|',
+      smartBackspace: true,
     });
-  </script>
+  });
+</script>
+
 </body>
 </html>
